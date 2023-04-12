@@ -1,0 +1,178 @@
+{
+  "id": "83456af7-e94a-4dc9-9138-da789569f05e",
+  "version": "2.0",
+  "name": "Bezpiatko_Tetiana",
+  "url": "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0",
+  "tests": [{
+    "id": "29e4b88e-fab9-4bb4-91a2-5645f58c2134",
+    "name": "Search test",
+    "commands": [{
+      "id": "2745c4fd-dd02-476c-95ca-b2deaefe1257",
+      "comment": "",
+      "command": "open",
+      "target": "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58bd5629-f4c0-4f66-b0e4-9663e10d1f01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "732x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45801370-ebbc-4a2e-ba62-d77f79b98043",
+      "comment": "",
+      "command": "click",
+      "target": "css=#searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d398235b-8d51-42f8-8887-88f605987cb1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='searchInput']",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ведмідь-губач"
+    }, {
+      "id": "c4880ad1-0aad-4ec7-97a7-52aaecbb9f6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["name=go", "name"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//input[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5e227c2-e29d-450f-97f8-e8f19c2a14e6",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"firstHeading\"]/span[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9d16ce-3ad9-427c-8ee4-2b7d2a42ae4e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "Етимологія",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8537a691-793e-4231-8640-0949cc675dab",
+    "name": "Test form login",
+    "commands": [{
+      "id": "0ed51e8b-4421-45ea-86d6-7296affd5a25",
+      "comment": "",
+      "command": "open",
+      "target": "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7202ea1-feee-4cfe-8f71-dfc4bd2bc38a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "732x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bfa53b8-4a5c-4edf-8f7c-08374043b43a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pt-login span",
+      "targets": [
+        ["css=#pt-login span", "css:finder"],
+        ["xpath=//li[@id='pt-login']/a/span", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "318e0347-85a4-4187-b137-05efad5b0e05",
+      "comment": "",
+      "command": "type",
+      "target": "name=wpName",
+      "targets": [
+        ["id=wpName1", "id"],
+        ["name=wpName", "name"],
+        ["css=#wpName1", "css:finder"],
+        ["xpath=//input[@id='wpName1']", "xpath:attributes"],
+        ["xpath=//div[@id='userloginForm']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Tetiana"
+    }, {
+      "id": "6798170c-d6ac-4400-b961-8026b6a8f962",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='wpPassword1']",
+      "targets": [
+        ["id=wpPassword1", "id"],
+        ["name=wpPassword", "name"],
+        ["css=#wpPassword1", "css:finder"],
+        ["xpath=//input[@id='wpPassword1']", "xpath:attributes"],
+        ["xpath=//div[@id='userloginForm']/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bdc99f0-fe86-4521-adc8-ba9e898e4cc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpPassword1",
+      "targets": [
+        ["id=wpPassword1", "id"],
+        ["name=wpPassword", "name"],
+        ["css=#wpPassword1", "css:finder"],
+        ["xpath=//input[@id='wpPassword1']", "xpath:attributes"],
+        ["xpath=//div[@id='userloginForm']/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1234567"
+    }, {
+      "id": "68196379-399e-40b2-a4ea-8d3323d51404",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Вхід')]",
+      "targets": [
+        ["id=wpLoginAttempt", "id"],
+        ["name=wploginattempt", "name"],
+        ["css=#wpLoginAttempt", "css:finder"],
+        ["xpath=//button[@id='wpLoginAttempt']", "xpath:attributes"],
+        ["xpath=//div[@id='userloginForm']/form/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вхід')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "31c17990-3078-486a-a544-e76551f8bbb4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["29e4b88e-fab9-4bb4-91a2-5645f58c2134"]
+  }],
+  "urls": ["https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0"],
+  "plugins": []
+}
